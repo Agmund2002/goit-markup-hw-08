@@ -1,0 +1,16 @@
+.title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.sec-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  &--light {
+    color: var(--secondary-title-color);
+  }
+}

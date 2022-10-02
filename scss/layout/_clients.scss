@@ -1,0 +1,25 @@
+.clients {
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  fill: currentColor;
+
+  transition: color var(--main-animation), border-color var(--main-animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
