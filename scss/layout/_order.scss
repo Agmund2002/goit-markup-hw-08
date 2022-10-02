@@ -1,22 +1,57 @@
 .order {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/section1/bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/order/bg-img_sm.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(47, 48, 58, 0.4);
-  box-sizing: 1600px 600px;
-  padding: 200px 0;
+  background-size: cover;
+  padding: 118px 0;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/order/bg-img_sm@2x.jpg);
+  }
 
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--secondary-title-color);
-    width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/order/bg-img_md.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/order/bg-img_md@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .order {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/order/bg-img_lg.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/order/bg-img_lg@2x.jpg);
+    }
+    padding: 200px 0;
+
+    &__title {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      max-width: 696px;
+    }
   }
 }
