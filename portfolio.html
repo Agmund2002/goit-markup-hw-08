@@ -22,8 +22,8 @@
       | Хедер
       |============================
     */ -->
-    <header class="header">
-      <!-- Основна навігація сайту -->
+    <!-- <header class="header">
+      
       <div class="container header__container">
         <a class="logo header__logo" lang="en" href="./index.html"
           >Web<span class="logo--dark">Studio</span></a
@@ -56,7 +56,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main class="main">
       <!-- /**
         |============================
@@ -85,16 +85,43 @@
           <!-- Перелік проєктів -->
           <ul class="grid projects__grid markers">
             <!-- Проэкт 1 -->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
-                <div class="project__overlay-area"
-                  ><img
-                    class="project__img"
-                    src="./images/portfolio/project1.jpg"
-                    alt="Ноутбук з бідкритим вебсайтом"
-                    width="370"
-                    height="294"
-                  />
+                <div class="project__overlay-area">
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg@1x.jpg 1x,
+                        ./images/portfolio/img-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md@1x.jpg 1x,
+                        ./images/portfolio/img-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm@1x.jpg 1x,
+                        ./images/portfolio/img-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-1_sm@1x.jpg"
+                      alt="Ноутбук з бідкритим вебсайтом"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -110,16 +137,43 @@
               </a>
             </li>
             <!-- Проэкт 2 -->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project2.jpg"
-                    alt="Постер з двома баскетболістами в момент гри на світлому фоні"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg@1x.jpg 1x,
+                        ./images/portfolio/img-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md@1x.jpg 1x,
+                        ./images/portfolio/img-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm@1x.jpg 1x,
+                        ./images/portfolio/img-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-2_sm@1x.jpg"
+                      alt="Постер з двома баскетболістами в момент гри на світлому фоні"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -137,16 +191,43 @@
               </a>
             </li>
             <!-- Проэкт 3 -->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project3.jpg"
-                    alt="Логотим з написом і рибою на світлому фоні"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg@1x.jpg 1x,
+                        ./images/portfolio/img-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md@1x.jpg 1x,
+                        ./images/portfolio/img-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm@1x.jpg 1x,
+                        ./images/portfolio/img-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-3_sm@1x.jpg"
+                      alt="Логотим з написом і рибою на світлому фоні"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -162,16 +243,43 @@
               </a>
             </li>
             <!-- Проэкт  4-->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project4.jpg"
-                    alt="Накладні навушники на світлому фоні"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg@1x.jpg 1x,
+                        ./images/portfolio/img-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md@1x.jpg 1x,
+                        ./images/portfolio/img-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm@1x.jpg 1x,
+                        ./images/portfolio/img-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-4_sm@1x.jpg"
+                      alt="Накладні навушники на світлому фоні"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -187,16 +295,43 @@
               </a>
             </li>
             <!-- Проэкт 5-->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project5.jpg"
-                    alt="Дві невеликі коробки на білому фоні. Одна біла, друга - картонного кольору"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg@1x.jpg 1x,
+                        ./images/portfolio/img-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md@1x.jpg 1x,
+                        ./images/portfolio/img-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm@1x.jpg 1x,
+                        ./images/portfolio/img-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-5_sm@1x.jpg"
+                      alt="Дві невеликі коробки на білому фоні. Одна біла, друга - картонного кольору"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -212,16 +347,43 @@
               </a>
             </li>
             <!-- Проэкт 6 -->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project6.jpg"
-                    width="370"
-                    height="294"
-                    alt="Монітор з відкритим сайтом"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg@1x.jpg 1x,
+                        ./images/portfolio/img-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md@1x.jpg 1x,
+                        ./images/portfolio/img-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm@1x.jpg 1x,
+                        ./images/portfolio/img-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-6_sm@1x.jpg"
+                      alt="Монітор з відкритим сайтом"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -237,16 +399,43 @@
               </a>
             </li>
             <!-- Проэкт 7 -->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project7.jpg"
-                    alt="Відкрита книга на світлому фоні"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg@1x.jpg 1x,
+                        ./images/portfolio/img-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md@1x.jpg 1x,
+                        ./images/portfolio/img-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm@1x.jpg 1x,
+                        ./images/portfolio/img-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-7_sm@1x.jpg"
+                      alt="Відкрита книга на світлому фоні"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -262,16 +451,43 @@
               </a>
             </li>
             <!-- Проэкт  8-->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project8.jpg"
-                    alt="Бірка з логотипом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg@1x.jpg 1x,
+                        ./images/portfolio/img-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md@1x.jpg 1x,
+                        ./images/portfolio/img-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm@1x.jpg 1x,
+                        ./images/portfolio/img-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-8_sm@1x.jpg"
+                      alt="Бірка з логотипом"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -287,16 +503,43 @@
               </a>
             </li>
             <!-- Проэкт 9 -->
-            <li class="grid__item">
+            <li class="grid__item projects__item">
               <a class="project" href="#" target="_blank" rel="noopener noreferrer nofollow">
                 <div class="project__overlay-area">
-                  <img
-                    class="project__img"
-                    src="./images/portfolio/project9.jpg"
-                    alt="Ноутбук на світлому столі з відкритим додатком. Поряд лежать папери та окуляри"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="project__picture">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg@1x.jpg 1x,
+                        ./images/portfolio/img-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md@1x.jpg 1x,
+                        ./images/portfolio/img-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm@1x.jpg 1x,
+                        ./images/portfolio/img-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/portfolio/img-9_sm@1x.jpg"
+                      alt="Ноутбук на світлому столі з відкритим додатком. Поряд лежать папери та окуляри"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="project__overlay">
                     <p class="project__desc"
                       >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -320,7 +563,7 @@
       | Футер
       |============================
     */ -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__flex container">
         <div class="footer__contacts">
           <a class="logo footer__logo" lang="en" href="./index.html"
@@ -425,6 +668,6 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

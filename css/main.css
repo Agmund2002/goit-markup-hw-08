@@ -917,9 +917,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -927,21 +926,23 @@ body {
 }
 
 .projects__filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .filter {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
-.grid__item {
-  width: 370px;
+@media screen and (min-width: 1200px) {
+  .projects__filter {
+    margin-bottom: 50px;
+  }
 }
-
 .project {
   display: block;
   text-decoration: none;
@@ -966,13 +967,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition: -webkit-transform var(--main-animation);
-  transition: -webkit-transform var(--main-animation);
-  transition: transform var(--main-animation);
-  transition: transform var(--main-animation), -webkit-transform var(--main-animation);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,6 +976,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 24px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transition: -webkit-transform var(--main-animation);
+  transition: -webkit-transform var(--main-animation);
+  transition: transform var(--main-animation);
+  transition: transform var(--main-animation), -webkit-transform var(--main-animation);
 }
 .project:hover .project__overlay, .project:focus .project__overlay {
   -webkit-transform: translateY(0);
@@ -991,7 +993,6 @@ body {
   font-size: 18px;
   line-height: 1.5555555556;
   color: var(--secondary-title-color);
-  width: 322px;
 }
 .project__border {
   border-left: 1px solid var(--border-color);
@@ -1011,6 +1012,16 @@ body {
   color: var(--secondary-txt-color);
 }
 
+@media screen and (min-width: 768px) {
+  .projects__item {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    --items: 3;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
