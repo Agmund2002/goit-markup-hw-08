@@ -182,18 +182,36 @@
         | команда
         |============================
       */ -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="title team__title">Наша команда</h2>
-          <ul class="list team__list markers">
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team1.jpg"
-                alt="чоловік з темним волоссям та бородою, в окулярах і червоній сорочці"
-                width="270"
-                height="260"
-              />
+          <ul class="grid team__grid markers">
+            <li class="grid__item team__item">
+              <picture class="team__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-1_lg@1x.jpg 1x, ./images/team/img-1_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-1_md@1x.jpg 1x, ./images/team/img-1_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-1_sm@1x.jpg 1x, ./images/team/img-1_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/img-1_sm@1x.jpg"
+                  alt="чоловік з темним волоссям та бородою, в окулярах і червоній сорочці"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__employee-name">Ігор Дем'яненко</h3>
                 <p class="team__employee-position" lang="en">Product Designer</p>
@@ -250,14 +268,32 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team2.jpg"
-                alt="жінка з світлим волоссям, в окулярах і діловому костюмі"
-                width="270"
-                height="260"
-              />
+            <li class="grid__item team__item">
+              <picture class="team__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-2_lg@1x.jpg 1x, ./images/team/img-2_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-2_md@1x.jpg 1x, ./images/team/img-2_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-2_sm@1x.jpg 1x, ./images/team/img-2_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/img-2_sm@1x.jpg"
+                  alt="жінка з світлим волоссям, в окулярах і діловому костюмі"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__employee-name">Ольга Рєпіна</h3>
                 <p class="team__employee-position" lang="en">Frontend Developer</p>
@@ -314,14 +350,32 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team3.jpg"
-                alt="чоловік з темним волоссям та легкою бородою, в світлій сорочці"
-                width="270"
-                height="260"
-              />
+            <li class="grid__item team__item">
+              <picture class="team__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-3_lg@1x.jpg 1x, ./images/team/img-3_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-3_md@1x.jpg 1x, ./images/team/img-3_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-3_sm@1x.jpg 1x, ./images/team/img-3_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/img-3_sm@1x.jpg"
+                  alt="чоловік з темним волоссям та легкою бородою, в світлій сорочці"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__employee-name">Микола Тарасов</h3>
                 <p class="team__employee-position" lang="en">Marketing</p>
@@ -378,14 +432,32 @@
                 </ul>
               </div>
             </li>
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/team/team4.jpg"
-                alt="чоловік з темним волоссям та бородою, в окулярах і чорній футболці"
-                width="270"
-                height="260"
-              />
+            <li class="grid__item team__item">
+              <picture class="team__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-4_lg@1x.jpg 1x, ./images/team/img-4_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-4_md@1x.jpg 1x, ./images/team/img-4_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img-4_sm@1x.jpg 1x, ./images/team/img-4_sm@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team/img-4_sm@1x.jpg"
+                  alt="чоловік з темним волоссям та бородою, в окулярах і чорній футболці"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__info">
                 <h3 class="team__employee-name">Михайло Єрмаков</h3>
                 <p class="team__employee-position" lang="en">UI Designer</p>
@@ -444,7 +516,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- /**
         |============================
         | секція з клієнтами

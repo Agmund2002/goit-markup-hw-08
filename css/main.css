@@ -22,7 +22,7 @@
   --border-color: #eee;
   --main-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --indent: 30px;
-  --items: 2;
+  --items: 1;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -452,12 +452,14 @@ body {
   font-size: 28px;
   line-height: 1.1785714286;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
     line-height: 1.1666666667;
+    margin-bottom: 50px;
   }
 }
 .sec-title {
@@ -670,9 +672,6 @@ body {
     max-width: 696px;
   }
 }
-.features__item {
-  --items: 1;
-}
 .features__icon-bg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -722,9 +721,6 @@ body {
   .services {
     display: block;
   }
-  .services__title {
-    margin-bottom: 50px;
-  }
   .services__item {
     --items: 3;
     position: relative;
@@ -744,18 +740,15 @@ body {
 .team {
   background-color: var(--secondary-background-color);
 }
-.team__title {
-  margin-bottom: 50px;
-}
 .team__item {
-  width: 270px;
   background-color: var(--root-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team__info {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 .team__employee-name {
   font-weight: 500;
@@ -772,8 +765,21 @@ body {
   margin-bottom: 16px;
 }
 
-.clients__title {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    --items: 4;
+  }
+  .team__info {
+    padding-bottom: 30px;
+  }
+}
+.clients__item {
+  --items: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -782,9 +788,6 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients__title {
-    margin-bottom: 50px;
-  }
   .clients__item {
     --items: 6;
   }
