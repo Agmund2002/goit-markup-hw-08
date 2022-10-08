@@ -4,7 +4,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 480px;
   padding: 118px 0;
+  margin: 0 auto;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -27,6 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .order {
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/order/bg-img_md.jpg);
 
@@ -39,6 +42,7 @@
 
 @media screen and (min-width: 1200px) {
   .order {
+    max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/order/bg-img_lg.jpg);
 

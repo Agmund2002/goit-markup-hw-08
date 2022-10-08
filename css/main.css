@@ -404,6 +404,11 @@ body {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .menu__close {
   position: absolute;
   top: 10px;
@@ -597,9 +602,6 @@ body {
     padding: 26px 0;
     margin-right: 87px;
   }
-  .header__btn {
-    display: none;
-  }
   .nav {
     display: block;
     margin-right: auto;
@@ -703,7 +705,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 480px;
   padding: 118px 0;
+  margin: 0 auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
@@ -726,6 +730,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .order {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/order/bg-img_md.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/bg-img_md.jpg);
   }
@@ -738,6 +743,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .order {
+    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/order/bg-img_lg.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order/bg-img_lg.jpg);
     padding: 200px 0;
@@ -1101,7 +1107,13 @@ body {
   }
 }
 .project {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   color: currentColor;
   position: relative;
@@ -1148,11 +1160,14 @@ body {
           transform: translateY(0);
 }
 .project__desc {
-  font-size: 18px;
-  line-height: 1.5555555556;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--secondary-title-color);
 }
 .project__border {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -1170,6 +1185,12 @@ body {
   color: var(--secondary-txt-color);
 }
 
+@media screen and (min-width: 480px) {
+  .project__desc {
+    font-size: 18px;
+    line-height: 1.5555555556;
+  }
+}
 @media screen and (min-width: 768px) {
   .projects__item {
     --items: 2;
